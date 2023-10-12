@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android_kotlin_app</string>
+    <string name="main_title">Create Account!</string>
 </resources>

@@ -1,18 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/back"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#fdfdfd"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="@string/main_title" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColorHint="#6a6a6a"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Enter login"
+        android:textColor="#fdfdfd" />
+
+    <EditText
+        android:id="@+id/user_email"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#6a6a6a"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Enter Email"
+        android:textColor="#fdfdfd" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="#6a6a6a"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Enter pass"
+        android:textColor="#fdfdfd" />
+
+    <Button
+        android:id="@+id/button_reg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:backgroundTint="#e2a600"
+        android:textColor="@color/back"
+        android:textSize="16dp"
+        android:text="REGISTRATION" />
+
+
+</LinearLayout>
