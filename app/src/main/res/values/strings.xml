@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">android_kotlin_app</string>
     <string name="main_title">Create Account!</string>
+    <string name="log_in">Enter Account!</string>
 </resources>
