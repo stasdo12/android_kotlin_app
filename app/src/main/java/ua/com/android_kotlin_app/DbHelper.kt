@@ -31,10 +31,10 @@ class DbHelper(val context:Context, val factory: SQLiteDatabase.CursorFactory?) 
         db.close()
     }
 
-    fun getUser(login :String, pass :String) : Boolean{
+    fun getUser(login: String, password: String): Boolean {
         val db = this.readableDatabase
 
-        val  result = db.rawQuery("SELECT * FROM users WHERE login = '$login' AND pass = '$pass", null)
+        val result = db.rawQuery("SELECT * FROM users WHERE login = '$login' AND pass = '$password'", null)
         return result.moveToFirst()
     }
 }

@@ -36,17 +36,21 @@ class AuthActivity : AppCompatActivity() {
                 val isAuth =  db.getUser(login, pass)
 
                 if (isAuth){
-                    Toast.makeText(this, "User with Login:  $login auth in app", Toast.LENGTH_LONG).show()
+                    print(isAuth)
+                    Toast.makeText(this, "User with Login:   auth in app", Toast.LENGTH_LONG).show()
+                    userLogin.text.clear()
+                    userPassword.text.clear()
+
+                    val intent = Intent(this, ItemsActivity::class.java)
+                    startActivity(intent)
                 }else
                     Toast.makeText(this, "User with Login:  $login DIDN'T auth in app", Toast.LENGTH_LONG).show()
 
 
-                userLogin.text.clear()
-                userPassword.text.clear()
+
             }
 
         }
-
 
     }
 }
