@@ -1,5 +1,13 @@
 # Android Kotlin App Readme
 
+![1](https://github.com/stasdo12/android_kotlin_app/assets/93029660/55d4b1d7-3666-44f0-96ce-c602dd750982)
+![2](https://github.com/stasdo12/android_kotlin_app/assets/93029660/d1e89ee1-5f3c-459c-9852-3552b1ccf74c)
+![3](https://github.com/stasdo12/android_kotlin_app/assets/93029660/435881d1-c955-4014-9c10-1da98ad41c40)
+![4](https://github.com/stasdo12/android_kotlin_app/assets/93029660/848c16db-6005-4a8a-9dc2-3a2f98a12d72)
+![5](https://github.com/stasdo12/android_kotlin_app/assets/93029660/378aa129-6655-4c1c-873e-05cd101c21a7)
+
+
+
 This is an Android app developed using the Kotlin programming language. The app allows users to register and log in, view a list of items, and purchase items. It also integrates the Razorpay payment gateway for making payments.
 
 ## Project Structure
